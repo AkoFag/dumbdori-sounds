@@ -1,4 +1,5 @@
-var akoNoises = ['dumb ako dance', 'ako drum 1', 'ako drum 2', 'ako drum 3', 'ban', 'don', 'angry ako']
+var akoNoises = ['dumb ako dance', 'ako drum 1', 'ako drum 2', 'ako drum 3', 'ban', 'don', 'angry ako', 
+'ako rinrin bd', 'ako daisuki', 'sleepy ako', 'ako trick or treat', 'ako new years']
     var yukinaNoises = ['yukinya']
 
     window.onload = function () {
