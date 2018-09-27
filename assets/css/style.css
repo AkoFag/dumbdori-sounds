@@ -13,7 +13,16 @@ body {
     border-radius: 10px;
     border: black 1px solid;
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
+}
+
+.yuki {
+    display: inline-block;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: black 1px solid;
+    margin: 10px;
+    margin-left: 0px;
 }
 
 .imgB {
@@ -26,6 +35,16 @@ body {
     src: url("assets/images/ako1.png");
 }
 
+.imgY {
+    margin: 10px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: blue 4px solid;
+    background-color: skyblue;
+    src: url("assets/images/yuki1.png");
+}
+
 .board {
     top: 50%;
     left: 50%;
@@ -35,3 +54,26 @@ body {
 p {
     margin-bottom: 10px;
 }
+
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+
+        .mb{
+            margin-left:3px;
+        }
+        
+    }
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+        .mb{
+            margin-left:20px;
+        }
+    }
