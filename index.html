@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/icon.png">
+    <title>Dumbdori Noise</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class='board'>
+
+    </div>
+
+
+</body>
+
+
+
+
+<script>
+
+    var akoNoises = ['dumb ako dance', 'ako drum 1', 'ako drum 2', 'ban', 'don', 'angry ako']
+    var yukinaNoises = ['yukinya']
+
+    window.onload = function () {
+
+        for (let i = 0; i < akoNoises.length; i++) {
+            $('.board').append(`
+        <div class="ako">
+            <input type="image" src="assets/images/ako1.png" data-val='${akoNoises[i]}' alt="Submit" class='imgB' width="100" height="100">
+            <center><p>${akoNoises[i]}</p></center>
+        </div>
+        `)
+        }
+    //place holder for yukinya
+        for (let i = 0; i < yukinaNoises.length; i++) {
+            $('.board').append(`
+        <div class="ako">
+            <input type="image" src="assets/images/ako1.png" data-val='${yukinaNoises[i]}' alt="Submit" class='imgB' width="100" height="100">
+            <center><p>${yukinaNoises[i]}</p></center>
+        </div>
+        `)
+        }
+    }
+
+
+    $(document).on('click', '.imgB', function () {
+        $(this).attr('src', 'assets/images/click1.png');
+        $(this).attr('width', '100');
+        $(this).attr('height', '100');
+        var audio = new Audio('assets/sounds/' + $(this).attr('data-val') + '.ogg');
+        audio.play();
+        setTimeout(function () {
+            $('.imgB').attr('src', 'assets/images/ako1.png');
+        }, 100);
+
+    });
+
+
+
+</script>
+
+</html>
