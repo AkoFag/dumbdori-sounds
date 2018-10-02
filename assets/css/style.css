@@ -85,7 +85,9 @@ body{
     display: inline-block;
     border-radius: 10px;
     border: black 1px solid;
-    margin: 5px;
+    margin: 1px;
+    margin-top:5px;
+    margin-bottom:5px;
     margin-left: 0px;
   }
 
