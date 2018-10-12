@@ -120,6 +120,11 @@ body{
     width: 150px;
 }
 
+.imgKano{
+    border:lightblue 4px solid;
+    src: url("assets/images/kano1.png")
+}
+
 .imgOT{
     border: darkblue 4px solid;
     src: url("assets/images/tae1.png");
