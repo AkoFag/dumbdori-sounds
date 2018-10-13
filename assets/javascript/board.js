@@ -6,6 +6,7 @@ var yukinaNoises = ['yukinya', 'yukinya hiss']
 var sayoN = ['sayo air gitah 用 gitah']
 var oTea = ['tae potato', 'dumb tae noise']
 var saayaN = ['dumb saaya noise']
+var kano = ['ふえぇぇ１','ふえぇぇ２','ふえぇぇ３','ふえぇぇ４']
 
 window.onload = function () {
 
@@ -15,6 +16,7 @@ window.onload = function () {
     appendButtons(sayoN, "assets/images/sayo1.png", 'imgS', 'sayo');
     appendButtons(saayaN, "assets/images/saaya1.png", 'imgSa', 'saaya');
     appendButtons(oTea,  "assets/images/tae1.png", 'imgOT', 'otae');
+    appendButtons(kano, "assets/images/kano1.png", 'imgKano', 'yuki');
 }
 
 function appendButtons(arr, src, imgStyle, boardClass) {
@@ -81,5 +83,16 @@ $(document).on('click', '.imgOT', function () {
     audio.play();
     setTimeout(function () {
         $('.imgOT').attr('src', 'assets/images/tae1.png');
+    }, 200);
+});
+
+$(document).on('click', '.imgKano', function () {
+    $(this).attr('src', 'assets/images/kanoClick.png');
+    $(this).attr('width', '100');
+    $(this).attr('height', '100');
+    var audio = new Audio('assets/sounds/' + $(this).attr('data-val') + '.ogg');
+    audio.play();
+    setTimeout(function () {
+        $('.imgKano').attr('src', 'assets/images/kano1.png');
     }, 200);
 });

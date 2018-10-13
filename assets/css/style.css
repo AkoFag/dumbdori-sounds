@@ -85,7 +85,9 @@ body{
     display: inline-block;
     border-radius: 10px;
     border: black 1px solid;
-    margin: 5px;
+    margin: 1px;
+    margin-top:5px;
+    margin-bottom:5px;
     margin-left: 0px;
   }
 
@@ -116,6 +118,11 @@ body{
     border-radius: 50%;
     height: 150px;
     width: 150px;
+}
+
+.imgKano{
+    border:lightblue 4px solid;
+    src: url("assets/images/kano1.png")
 }
 
 .imgOT{
@@ -155,9 +162,7 @@ p {
 
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+    and (device-width : 375px) { 
 
 
         .mb{
@@ -167,9 +172,7 @@ p {
     }
 
     @media only screen 
-    and (device-width : 414px) 
-    and (device-height : 736px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+    and (device-width : 414px) { 
 
         .mb{
             margin-left:20px;
