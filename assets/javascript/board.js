@@ -6,7 +6,7 @@ var yukinaNoises = ['yukinya', 'yukinya hiss']
 var sayoN = ['sayo air gitah 用 gitah']
 var oTea = ['tae potato', 'dumb tae noise']
 var saayaN = ['dumb saaya noise']
-var kano = ['ふえぇぇ１','ふえぇぇ２','ふえぇぇ３','ふえぇぇ４']
+var kano = ['ふえぇぇ１','ふえぇぇ２','ふえぇぇ３','ふえぇぇ４', 'kanon drum']
 
 window.onload = function () {
 
