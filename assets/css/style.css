@@ -135,9 +135,19 @@ body{
     src: url("assets/images/saaya1.png");
 }
 
+.imgKkr{
+    border:darkgoldenrod 4px solid;
+    src: url("assets/images/kokoro1.png");
+}
+
 .imgS{
     border: darkcyan 4px solid;
     src: url("assets/images/sayo1.png");
+}
+
+.imgH{
+    border: darkcyan 4px solid;
+    src: url("assets/images/hina1.png");
 }
 
 .imgB {
