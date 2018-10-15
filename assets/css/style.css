@@ -114,10 +114,15 @@ body{
 }
 
 .imgBase{
-    margin: 10px;
+    margin: 7px;
     border-radius: 50%;
     height: 150px;
     width: 150px;
+}
+
+.imgMaya{
+    border: darkcyan 4px solid;
+    src: url("assets/images/maya1.png");
 }
 
 .imgKano{

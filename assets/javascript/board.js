@@ -9,6 +9,7 @@ var saayaN = ['dumb saaya noise']
 var kano = ['ふえぇぇ１','ふえぇぇ２','ふえぇぇ３','ふえぇぇ４', 'kanon drum']
 var runRun = ['boo boo'] //add css for hina later
 var kkr = ['yay']
+var maya = ['maya フヘへ1', 'maya フヘへ2', 'maya フヘへ3', 'maya フヘへ4', 'maya admiring フヘへ']
 
 window.onload = function () {
 
@@ -21,6 +22,7 @@ window.onload = function () {
     appendButtons(oTea,  "assets/images/tae1.png", 'imgOT', 'otae');
     appendButtons(kano, "assets/images/kano1.png", 'imgKano', 'yuki');
     appendButtons(kkr, "assets/images/kokoro1.png", "imgKkr", 'saaya');
+    appendButtons(maya, "assets/images/maya1.png", "imgMaya", 'sayo');
     
 }
 
@@ -121,5 +123,16 @@ $(document).on('click', '.imgKkr', function () {
     audio.play();
     setTimeout(function () {
         $('.imgKkr').attr('src', 'assets/images/kokoro1.png');
+    }, 200);
+});
+
+$(document).on('click', '.imgMaya', function () {
+    $(this).attr('src', 'assets/images/mayaClick.png');
+    $(this).attr('width', '100');
+    $(this).attr('height', '100');
+    var audio = new Audio('assets/sounds/' + $(this).attr('data-val') + '.ogg');
+    audio.play();
+    setTimeout(function () {
+        $('.imgMaya').attr('src', 'assets/images/maya1.png');
     }, 200);
 });
