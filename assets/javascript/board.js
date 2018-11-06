@@ -1,6 +1,7 @@
 ﻿var akoNoises = ['dumb ako dance', 'dumb ako dance 2', 'ako drum 1', 'ako drum 2', 'ako drum 3', 'ban', 'ban 2', 'don', 'angry ako', 'happy ako',
     'ako rinrin bd', 'ako daisuki', 'sleepy ako', 'ako trick or treat', 'ako new years', 'ako mumumu', 'ako guru guru', 'ako btfo by hagumi',
     'ako fufufu', 'ako お姉ちゃん', 'ako jackolantern', 'ako sugoi sugoi']
+var rimiriN = ['rimi チョココロネや']
 var yukinaNoises = ['yukinya', 'yukinya hiss']
 
 var sayoN = ['sayo air gitah 用 gitah']
@@ -15,6 +16,7 @@ window.onload = function () {
 
     //param array, image for button, style for button, class colors
     appendButtons(akoNoises, "assets/images/ako1.png", 'imgB', 'ako');
+    appendButtons(rimiriN, "assets/images/rimi1.png", 'imgRim', 'rimi');
     appendButtons(yukinaNoises, "assets/images/yuki1.png", 'imgY', 'yuki');
     appendButtons(sayoN, "assets/images/sayo1.png", 'imgS', 'sayo');
     appendButtons(runRun, "assets/images/hina1.png", "imgH", 'sayo')
@@ -23,6 +25,7 @@ window.onload = function () {
     appendButtons(kano, "assets/images/kano1.png", 'imgKano', 'yuki');
     appendButtons(kkr, "assets/images/kokoro1.png", "imgKkr", 'saaya');
     appendButtons(maya, "assets/images/maya1.png", "imgMaya", 'sayo');
+    
     
 }
 
@@ -36,6 +39,17 @@ function appendButtons(arr, src, imgStyle, boardClass) {
         `)
     }
 }
+
+$(document).on('click', '.imgRim', function () {
+    $(this).attr('src', 'assets/images/rimiclick.png');
+    $(this).attr('width', '100');
+    $(this).attr('height', '100');
+    var audio = new Audio('assets/sounds/' + $(this).attr('data-val') + '.ogg');
+    audio.play();
+    setTimeout(function () {
+        $('.imgRim').attr('src', 'assets/images/rimi1.png');
+    }, 200);
+});
 
 
 $(document).on('click', '.imgB', function () {
