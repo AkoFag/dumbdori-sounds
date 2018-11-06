@@ -22,6 +22,7 @@ body{
 .taco{
     position:fixed;
     background-image: url('../images/background.jpg');
+    background-position-x: -50px;
     -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
   -o-animation:100s scroll infinite linear;
@@ -113,6 +114,10 @@ body{
     background-color:lightskyblue;
 }
 
+.rimi{
+    background-color: plum;
+}
+
 .imgBase{
     margin: 7px;
     border-radius: 50%;
@@ -165,9 +170,15 @@ body{
     src: url("assets/images/yuki1.png");
 }
 
+.imgRim{
+    border: palevioletred 4px solid;
+    src: url("assets/images/rimi1.png");
+}
+
 .board {
    height:100%;
    overflow:auto;
+   text-align: center;
 }
 
 
