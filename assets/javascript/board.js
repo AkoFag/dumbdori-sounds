@@ -15,7 +15,7 @@ var maya = ['maya フヘへ1', 'maya フヘへ2', 'maya フヘへ3', 'maya フ�
 window.onload = function () {
 
     //param array, image for button, style for button, class colors
-    appendButtons(akoNoises, "assets/images/ako1.png", 'imgB', 'ako');
+    //appendButtons(akoNoises, "assets/images/ako1.png", 'imgB', 'ako');
     appendButtons(rimiriN, "assets/images/rimi1.png", 'imgRim', 'rimi');
     appendButtons(yukinaNoises, "assets/images/yuki1.png", 'imgY', 'yuki');
     appendButtons(sayoN, "assets/images/sayo1.png", 'imgS', 'sayo');
