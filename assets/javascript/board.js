@@ -1,6 +1,6 @@
-﻿var akoNoises = ['ako drum 1', 'ako drum 2', 'ako drum 3', 'ban', 'ban 2', 'don', 'angry ako', 'happy ako',
-    'ako rinrin bd', 'ako daisuki', 'sleepy ako', 'ako trick or treat', 'ako new years', 'ako mumumu', 'ako guru guru', 'ako btfo by hagumi',
-    'ako fufufu', 'ako お姉ちゃん', 'ako jackolantern', 'ako sugoi sugoi']
+//var akoNoises = ['dumb ako dance', 'dumb ako dance 2', 'ako drum 1', 'ako drum 2', 'ako drum 3', 'ban', 'ban 2', 'don', 'angry ako', 'happy ako',
+    //'ako rinrin bd', 'ako daisuki', 'sleepy ako', 'ako trick or treat', 'ako new years', 'ako mumumu', 'ako guru guru', 'ako btfo by hagumi',
+    //'ako fufufu', 'ako お姉ちゃん', 'ako jackolantern', 'ako sugoi sugoi']
 var rimiriN = ['rimi チョココロネや']
 var yukinaNoises = ['yukinya', 'yukinya hiss']
 
