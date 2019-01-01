@@ -22,7 +22,7 @@
 
     <div class="taco">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display:none">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display:absolute">
             <a class="navbar-brand" href="#">Dumbdori Noise</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,12 +38,27 @@
                         <a class="nav-link" href="#">Contribute</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Others</a>
+                        <a class="nav-link news" href="#">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ako-dori.firebaseapp.com/">Flappy Ako</a>
                     </li>
                 </ul>
 
             </div>
         </nav>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Currently planning on changing hosts; the url name will remain the same, will fix the missing noises eventually. <br/> 
+                Contribute tab doesn't do anything at the moment.
+                </p>
+            </div>
+          
+          </div>
 
         <div class='board'>
 
@@ -56,5 +71,6 @@
 </body>
 
 <script src="assets/javascript/board.js"></script>
+<script src="assets/javascript/functions.js"></script>
 
 </html>
