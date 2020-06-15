@@ -214,6 +214,21 @@ body{
     src: url("assets/images/rimi1.png");
 }
 
+.imgChu{
+  border: orangered 4px solid;
+  src: url("assets/images/chu.png");
+}
+
+.imgPa{
+  border: skyblue 4px solid;
+  src: url("assets/images/pareo.png");
+}
+
+.imgRin{
+  border: rgb(65, 51, 64) 4px solid;
+  src: url("assets/images/rin1.png");
+}
+
 .board {
    height:100%;
    overflow:auto;

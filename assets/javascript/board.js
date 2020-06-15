@@ -12,6 +12,8 @@ var runRun = ['boo boo'] //add css for hina later
 var kkr = ['yay']
 var maya = ['maya フヘへ1', 'maya フヘへ2', 'maya フヘへ3', 'maya フヘへ4', 'maya admiring フヘへ']
 var rinRin = ['rinrin panic']
+var chuchu = ['chu pareo jakki']
+var pareo = ['すみませんCHU2様']
 
 window.onload = function () {
 
@@ -27,6 +29,8 @@ window.onload = function () {
     appendButtons(kano, "assets/images/kano1.png", 'imgKano', 'yuki');
     appendButtons(kkr, "assets/images/kokoro1.png", "imgKkr", 'saaya');
     appendButtons(maya, "assets/images/maya1.png", "imgMaya", 'sayo');
+    appendButtons(chuchu, "assets/images/chu.png", "imgChu", 'yuki' ); 
+    appendButtons(pareo, "assets/images/pareo.png", 'imgPa', 'rimi');
     
     
 }
@@ -41,6 +45,29 @@ function appendButtons(arr, src, imgStyle, boardClass) {
         `)
     }
 }
+
+
+$(document).on('click', '.imgChu', function () {
+    $(this).attr('src', 'assets/images/chuclick.png');
+    $(this).attr('width', '100');
+    $(this).attr('height', '100');
+    var audio = new Audio('assets/sounds/' + $(this).attr('data-val') + '.ogg');
+    audio.play();
+    setTimeout(function () {
+        $('.imgChu').attr('src', 'assets/images/chu.png');
+    }, 200);
+});
+
+$(document).on('click', '.imgPa', function () {
+    $(this).attr('src', 'assets/images/pareoclick.png');
+    $(this).attr('width', '100');
+    $(this).attr('height', '100');
+    var audio = new Audio('assets/sounds/' + $(this).attr('data-val') + '.ogg');
+    audio.play();
+    setTimeout(function () {
+        $('.imgPa').attr('src', 'assets/images/pareo.png');
+    }, 200);
+});
 
 $(document).on('click', '.imgRim', function () {
     $(this).attr('src', 'assets/images/rimiclick.png');
